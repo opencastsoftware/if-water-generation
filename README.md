@@ -1,5 +1,7 @@
 # water-cloud
 
+![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
+
 `water-cloud` is a generic plugin for calculating the water consumption by datacenters
 
 
