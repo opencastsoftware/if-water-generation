@@ -7,14 +7,14 @@ interface Input {
   geolocation: string; // Should be a comma-separated string of latitude, longitude
 }
 
-interface Config {
-  // Define other global config options if needed
-}
+// interface Config {
+//   // Define other global config options if needed
+// }
 
-interface ConsumptionResult {
-  totalConsumption: number;
-  country: string;
-}
+// interface ConsumptionResult {
+//   totalConsumption: number;
+//   country: string;
+// }
 
 interface Output extends Input {
   'water-power': number;
@@ -22,7 +22,7 @@ interface Output extends Input {
 }
 
 // WaterGeneration function in TypeScript
-const WaterGeneration = (globalConfig: Config) => {
+const WaterGeneration = () => {
   const metadata = {
     kind: 'execute',
   };
@@ -43,7 +43,7 @@ const WaterGeneration = (globalConfig: Config) => {
   };
 
   // Main execution logic
-  const execute = async (inputs: Input[], config: Config): Promise<Output[]> => {
+  const execute = async (inputs: Input[]): Promise<Output[]> => {
     const result: Output[] = [];
 
     for (let i = 0; i < inputs.length; i++) {

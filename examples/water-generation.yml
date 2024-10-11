@@ -5,7 +5,7 @@ initialize:
   plugins:
     water-generation:
       method: WaterGeneration
-      path: 'water-generation'
+      path: 'if-water-generation'
       global-config:
         keep-exisiting: true
 tree:
